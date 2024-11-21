@@ -1,0 +1,177 @@
+
+body {
+    background-color: #eeede1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.main-container {
+    display: flex;
+    width: 900px;
+    height: 1150px; 
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.left-panel {
+    width: 330px; 
+    display: flex;
+    flex-direction: column;
+    height: 1150px; 
+    background-color: #e6e6e6;
+}
+
+.photo-panel {
+    width: auto;
+    height: 50%;
+}
+
+.photo-panel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #e6e6e6;
+}
+
+
+h1 {
+    margin: 20px 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+.nccu-icon {
+    margin-top: 20px;
+    width: 80%;
+}
+
+.right-panel {
+    width: 540px;
+    height: 1150px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.timeline {
+    padding: 0;
+    list-style-type: none;
+}
+
+.timeline-item {
+    margin-bottom: 20px;
+}
+
+.timeline-item .year {
+    font-weight: bold;
+
+}
+
+.timeline-item .description {
+    margin-left: 20px;
+    color: #555;
+    font-size: 1em;
+}
+
+
+.homework-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.homework-list a {
+    text-decoration: none;
+    color: #555;
+}
+
+.homework-list a:hover {
+    color: #000080;
+    transition: color 0.3s ease;
+}
+
+
+.music-grid {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Adjust layout for smaller screens */
+@media screen and (max-width: 768px) {
+    .music-grid {
+        justify-content: space-between; /* Distribute space between images */
+    }
+
+    .music-grid img {
+        width: 80px; /* Smaller images on medium screens */
+    }
+}
+
+/* Further adjust layout for very small screens */
+@media screen and (max-width: 480px) {
+    .music-grid {
+        justify-content: center; /* Center the images on very small screens */
+    }
+
+    .music-grid img {
+        width: 60px; /* Even smaller images */
+    }
+}
+
+
+.music-item {
+    text-align: center;
+    width: 100px;
+}
+
+.music-item img {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.music-item p {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #333;
+}
+
+
+.music-note {
+    font-size: 12px;
+    color: #666;
+    margin-top: 10px;
+}
